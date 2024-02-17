@@ -1,0 +1,64 @@
+
+h1{
+    text-align: center;
+    color: rgb(2, 16, 217);
+}
+
+h2{
+    color:rgb(2, 16, 217) ;
+    font-size: 25px;
+}
+
+p{
+  color:rgb(0, 0, 0) ;
+}
+
+#firstimage{
+    width: 400px;
+    height: 400px;
+    margin: 20px 20px 20px 20px;
+    border-radius: 50%;
+    float: left;
+}
+
+#Biography{
+    font-size: 30px;
+    color:rgb(2, 16, 217);
+}
+#BiographyDiv{
+    margin: 5px 10px 5px 10px;
+    align-items: center;
+
+  }
+
+  .EducationList{
+    display: block;
+    margin-left: 450px;
+    list-style: circle;
+  }
+
+
+ .A{
+    color:rgb(0, 0, 0);
+ }
+ .B{
+    color:rgb(0, 0, 0);
+ }
+ .C{
+    color: rgb(0, 0, 0);
+ }
+
+ #list1{
+  color: rgb(0, 0, 0);
+  font-style: italic;
+ }
+
+ ul::li{
+  font-style: italic;
+ }
+ ul{
+  font-size: 20px;
+ }
+ #Experience{
+  text-indent: 50px;
+ }
