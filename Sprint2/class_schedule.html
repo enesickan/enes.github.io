@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Schedule</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <!-- Login and register buttons above -->
+        <div class="loginRegister">
+            <a href="login.html" class="button">Login</a>
+            <span> / </span> 
+            <a href="register.html" class="button">Register</a>
+        </div>
+        <header>
+            <!-- Navigation Bar (same as other pages) -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="class_schedule.html">Class Schedule</a></li>
+                    <li><a href="exam_schedule.html">Exam Schedule</a></li>
+                    <li><a href="student_management.html">Student Management</a></li>
+                    <li><a href="teacher_management.html">Teacher Management</a></li>
+                    <li><a href="help_support.html">Help & Support</a></li>
+                </ul>
+            </nav>
+        </header>   
+    </div>
+
+
+    
+    <div class="scheduleContainer">
+        <!-- Description about what to do -->
+        <p class="description_class">To view the class schedule, upload the CSV file:</p>
+
+        <!-- Form for updloading csv and create schedule button to create an output -->
+        <form id="csvForm" enctype="multipart/form-data">
+            <input type="file" id="csvFile" style="display: none;" onchange="handleFileSelect()">
+            <button type="button" onclick="uploadCSV()" class="uploadButton">Upload CSV</button>
+        </form>
+        <!-- Section for selecting department -->
+        <div class="selectSection">
+            <label for="sectionSelect">Select Section:</label>
+            <select id="sectionSelect">
+                <option value="section1">--------</option>
+                <option value="section2">Computer Engineering</option>
+                <option value="section3">Electrical Electronics Engineering</option>
+                <option value="section4">Industrial Engineering</option>
+                <option value="section5">Energy Systems Engineering</option>
+                <option value="section6">Civil Engineering</option>
+                <option value="section7">Machine Engineering</option>
+                <option value="section8">Metallurgy and Materials Engineering</option>
+                <option value="section9">Math</option>
+                <option value="section10">Software Engineering</option>
+               
+            </select>
+        </div>
+        <button class="createButton">Schedule Create</button>
+    </div>
+
+    <!-- Image output that shows generated schedule -->
+    <div class="imageContainer">
+        <p class="imageTitle2">Example Class Schedule for Computer Engineering</p>
+        <img src="dersprogrami.jpg" alt="Example Class Schedule for Computer Engineering">
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p> &copy; Copyright</p>
+    </footer>
+
+</body>
+</html>
