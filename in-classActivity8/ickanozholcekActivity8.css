@@ -1,0 +1,17 @@
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 200px 300px;
+}
+
+
+.part2{
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+
+.part1{
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
