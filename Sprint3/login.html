@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Login and register buttons above. We wanted thay can still stay here even if we already in the login or register page -->
+    <div class="loginRegister">
+        <a href="login.html" class="button">Login</a>
+        <span> / </span> 
+        <a href="register.html" class="button">Register</a>
+    </div>
+    <div>
+        <header>
+            <!-- Navigation Bar (same as other pages) -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="class_schedule.html">Class Schedule</a></li>
+                    <li><a href="exam_schedule.html">Exam Schedule</a></li>
+                    <li><a href="student_management.html">Student Management</a></li>
+                    <li><a href="teacher_management.html">Teacher Management</a></li>
+                    <li><a href="help_support.html">Help & Support</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+
+    <!-- Main part of the page -->
+    <main>
+        <div>
+            <h2 class="h2text">Login</h2>
+        </div>
+
+        <!-- Form for user to login -->
+        <form id="loginForm">
+            <label for="name">Username:</label><br>
+            <input type="text" id="name" name="name" required><br>
+
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br>
+
+            <button type="submit">Login</button>
+            <a href="#" class="forgotPassword">Forgot Password?</a>
+        </form>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p> &copy; Copyright</p>
+    </footer>
+
+</body>
+</html>
