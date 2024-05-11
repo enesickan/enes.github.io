@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="tabstylestudent/tabstyleaddstudent.css">
+    <link rel="stylesheet" href="tabstylestudent/tabstyleeditstudent.css">
+    <link rel="stylesheet" href="tabstylestudent/tabstyledeletestudent.css">
+    <link rel="stylesheet" href="tabstylestudent/tabstylestudentdetails.css">
+    <link rel="stylesheet" href="tabstylestudent/tabstylegenerallist.css">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <link rel="stylesheet" href="jquery-ui.css">
+    <script src="script3.js"></script>
+</head>
+<body>
+    <!-- Login and register buttons above -->
+    <div class="loginRegister">
+        <a href="login.html" class="button">Login</a>
+        <span> / </span> 
+        <a href="register.html" class="button">Register</a>
+    </div>
+
+    <div>
+        <header>
+            <!-- Navigation Bar (same as other pages) -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="class_schedule.html">Class Schedule</a></li>
+                    <li><a href="exam_schedule.html">Exam Schedule</a></li>
+                    <li><a href="student_management.html">Student Management</a></li>
+                    <li><a href="teacher_management.html">Teacher Management</a></li>
+                    <li><a href="help_support.html">Help & Support</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+        <!-- Tabs for managing students -->
+        <div id="tabs">
+            <ul>
+                <li><a href="#add-student-tab">Add Student</a></li>
+                <li><a href="#edit-student-tab">Edit Student</a></li>
+                <li><a href="#delete-student-tab">Delete Student</a></li>
+                <li><a href="#student-details-tab">Student Details</a></li>
+                <li><a href="#general-list-tab">General List</a></li>
+            </ul>
+
+            <div id="add-student-tab">
+                <form id="addStudentForm">
+                    <h2>Add Student</h2>
+                    <div class="form-group">
+                        <label for="studentID">Student ID:</label>
+                        <input type="number" id="studentID" name="studentID" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="class">Class:</label>
+                        <input type="number" id="class" name="class" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="department">Department:</label>
+                        <input type="text" id="department" name="department" required>
+                    </div>
+                    <button type="submit">Add Student</button>
+                </form>
+            </div>
+
+            <div id="edit-student-tab">
+                <form id="editStudentForm">
+                    <h2>Edit Student</h2>
+                    <div class="form-group">
+                        <label for="selectStudent">Select Student:</label>
+                        <select id="selectStudent" name="selectStudent">
+                            <option value="20015478">Ali Alp - Computer Engineering</option>
+                            <option value="20015479">Esila Uçar - Electrical Electronics Engineering</option>
+                            <option value="20015480">Kübra Alan - Energy Systems Engineering</option>
+                            <option value="20015481">Yusuf Kar - Machine Engineering</option>
+                            <option value="20015482">Muhammet Turan - Metallurgy and Materials Engineering</option>
+                            <option value="20015483">Mehmet Mir - Software Engineering</option>
+                            <option value="20015484">Merve Sak - Industrial Engineering</option>
+                            <option value="20015485">Eren Çel - Civil Engineering</option>
+                            <option value="20015486">Can Kurt - Computer Engineering</option>
+                            <option value="20015487">Mahir Üst - Industrial Engineering</option>
+                            <option value="20015488">Yusuf Yar - Software Engineering</option>
+                            <option value="20015489">Kiraz Tur - Civil Engineering</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="class">Class:</label>
+                        <input type="text" id="class" name="class" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="department">Department:</label>
+                        <input type="text" id="department" name="department" required>
+                    </div>
+                    <button type="submit">Save Changes</button>
+                </form>
+            </div>
+
+            <div id="delete-student-tab">
+                <form id="deleteStudentForm">
+                    <h2>Delete Student</h2>
+                    <div class="form-group">
+                        <label for="selectStudent">Select Student:</label>
+                        <select id="selectStudent" name="selectStudent">
+                            <option value="20015478">Ali Alp - Computer Engineering</option>
+                            <option value="20015479">Esila Uçar - Electrical Electronics Engineering</option>
+                            <option value="20015480">Kübra Alan - Energy Systems Engineering</option>
+                            <option value="20015481">Yusuf Kar - Machine Engineering</option>
+                            <option value="20015482">Muhammet Turan - Metallurgy and Materials Engineering</option>
+                            <option value="20015483">Mehmet Mir - Software Engineering</option>
+                            <option value="20015484">Merve Sak - Industrial Engineering</option>
+                            <option value="20015485">Eren Çel - Civil Engineering</option>
+                            <option value="20015486">Can Kurt - Computer Engineering</option>
+                            <option value="20015487">Mahir Üst - Industrial Engineering</option>
+                            <option value="20015488">Yusuf Yar - Software Engineering</option>
+                            <option value="20015489">Kiraz Tur - Civil Engineering</option>
+                        </select>
+                    </div>
+                    <button type="button" onclick="deleteStudent()">Delete Student</button>
+                </form>
+            </div>
+
+            <div id="student-details-tab">
+                <div class="student-details-container">
+                    <h2>Student Details</h2>
+                    <div class="input-group">
+                        <label for="selectStudent">Select a Student:</label>
+                        <select id="selectStudent" name="selectStudent">
+                            <option value="20015478">Ali Alp</option>
+                            <option value="20015479">Esila Uçar</option>
+                            <option value="20015480">Kübra Alan</option>
+                            <option value="20015481">Yusuf Kar</option>
+                            <option value="20015482">Muhammet Turan</option>
+                            <option value="20015483">Mehmet Mir</option>
+                            <option value="20015484">Merve Sak</option>
+                            <option value="20015485">Eren Çel</option>
+                            <option value="20015486">Can Kurt</option>
+                            <option value="20015487">Mahir Üst</option>
+                            <option value="20015488">Yusuf Yar</option>
+                            <option value="20015489">Kiraz Tur</option>
+                        </select>
+                    </div>
+                    <button id="showDetailsBtnSt">Show Details</button>
+                    <div class="student-card" id="studentDetailsCard">
+                        <div class="student-info">
+                            <div class="info-item">
+                                <span class="info-label">Student ID:</span>
+                                <span class="info-value" id="studentID">20015478</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Name:</span>
+                                <span class="info-value" id="studentName">Ali Alp</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Class:</span>
+                                <span class="info-value" id="studentClass">3</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Department:</span>
+                                <span class="info-value" id="studentDepartment">Computer Engineering</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="general-list-tab">
+                <div class="student-list">
+                    <!-- List of students -->
+                    <table id="studentTable">
+                        <thead>
+                            <tr>
+                                <th>Student ID</th>
+                                <th>Student Name</th>
+                                <th>Student Surname</th>
+                                <th>Class</th>
+                                <th>Department</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>20015478</td>
+                                <td>Ali</td>
+                                <td>Alp</td>
+                                <td>3</td>
+                                <td>Computer Engineering</td>
+                            </tr>
+                            <tr>
+                                <td>20015479</td>
+                                <td>Esila</td>
+                                <td>Uçar</td>
+                                <td>2</td>
+                                <td>Electrical Electronics Engineering</td>
+                            </tr>
+                            <tr>
+                                <td>20015480</td>
+                                <td>Kübra</td>
+                                <td>Alan</td>
+                                <td>2</td>
+                                <td>Energy Systems Engineering</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>20015481</td>
+                                <td>Yusuf</td>
+                                <td>Kar</td>
+                                <td>4</td>
+                                <td>Machine Engineering</td>
+                            </tr>
+                            <tr>
+                                <td>20015482</td>
+                                <td>Muhammet</td>
+                                <td>Turan</td>
+                                <td>1</td>
+                                <td>Metallurgy and Materials Engineering</td>
+                            </tr>
+                            <tr>
+                                <td>20015483</td>
+                                <td>Mehmet</td>
+                                <td>Mir</td>
+                                <td>4</td>
+                                <td>Software Engineering</td>
+                            </tr>
+                            <tr>
+                                <td>20015484</td>
+                                <td>Merve</td>
+                                <td>Sak</td>
+                                <td>3</td>
+                                <td>Industrial Engineering</td>
+                            </tr>
+                            <tr>
+                                <td>20015485</td>
+                                <td>Eren</td>
+                                <td>Çel</td>
+                                <td>3</td>
+                                <td>Civil Engineering</td>
+                            </tr>
+                            <tr>
+                                <td>20015486</td>
+                                <td>Can</td>
+                                <td>Kurt</td>
+                                <td>1</td>
+                                <td>Computer Engineering</td>
+                            </tr>
+                            <tr>
+                                <td>20015487</td>
+                                <td>Mahir</td>
+                                <td>Üst</td>
+                                <td>2</td>
+                                <td>Industrial Engineering</td>
+                            </tr>
+                            <tr>
+                                <td>20015488</td>
+                                <td>Yusuf</td>
+                                <td>Yar</td>
+                                <td>3</td>
+                                <td>Software Engineering</td>
+                            </tr>
+                            <tr>
+                                <td>20015489</td>
+                                <td>Kiraz</td>
+                                <td>Tur</td>
+                                <td>1</td>
+                                <td>Civil Engineering</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="dialog" title="Student Details">
+        <p id="studentDetails"></p>
+    </div>
+
+    <br><br><br><br>
+
+    <!-- Footer -->
+    <footer>
+        <p> &copy; Copyright</p>
+    </footer>
+
+</body>
+</html>
