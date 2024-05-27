@@ -1,0 +1,100 @@
+[
+    {
+        "studentID": "20011039",
+        "firstName": "Mehdi",
+        "lastName": "Yarğın",
+        "class": 3,
+        "department": "Computer Engineering"
+    },
+    {
+        "studentID": "20015478",
+        "firstName": "Alii",
+        "lastName": "Alp",
+        "class": 3,
+        "department": "Computer Engineering"
+    },
+    {
+        "studentID": "20015479",
+        "firstName": "Esilaaaaa",
+        "lastName": "Uçar",
+        "class": 2,
+        "department": "Electrical Electronics Engineering"
+    },
+    {
+        "studentID": "20015480",
+        "firstName": "Kübra",
+        "lastName": "Alan",
+        "class": 2,
+        "department": "Energy Systems Engineering"
+    },
+    {
+        "studentID": "20015481",
+        "firstName": "Yusuf",
+        "lastName": "Kar",
+        "class": 4,
+        "department": "Machine Engineering"
+    },
+    {
+        "studentID": "20015482",
+        "firstName": "Muhammet",
+        "lastName": "Turan",
+        "class": 1,
+        "department": "Metallurgy and Materials Engineering"
+    },
+    {
+        "studentID": "20015483",
+        "firstName": "Mehmet",
+        "lastName": "Mir",
+        "class": 4,
+        "department": "Software Engineering"
+    },
+    {
+        "studentID": "20015484",
+        "firstName": "Merve",
+        "lastName": "Sak",
+        "class": 3,
+        "department": "Industrial Engineering"
+    },
+    {
+        "studentID": "20015485",
+        "firstName": "Eren",
+        "lastName": "Çel",
+        "class": 3,
+        "department": "Civil Engineering"
+    },
+    {
+        "studentID": "20015486",
+        "firstName": "Can",
+        "lastName": "Kurt",
+        "class": 1,
+        "department": "Computer Engineering"
+    },
+    {
+        "studentID": "20015487",
+        "firstName": "Mahir",
+        "lastName": "Üst",
+        "class": 2,
+        "department": "Industrial Engineering"
+    },
+    {
+        "studentID": "20015488",
+        "firstName": "Yusuf",
+        "lastName": "Yar",
+        "class": 3,
+        "department": "Software Engineering"
+    },
+    {
+        "studentID": "20015489",
+        "firstName": "Kiraz",
+        "lastName": "Tur",
+        "class": 1,
+        "department": "Civil Engineering"
+    },
+    {
+        "studentID": "20011062",
+        "firstName": "Enes",
+        "lastName": "Mir",
+        "class": 3,
+        "department": "Industrial Engineering"
+    }
+]
